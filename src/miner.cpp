@@ -633,7 +633,7 @@ void static BitcoinMiner(CWallet *pwallet)
                 break;
             }       
 	    ++pblock->nNonce;    
-
+            nHashesDone += 1;
             // Meter hashes/sec
             static int64_t nHashCounter;
             if (nHPSTimerStart == 0)

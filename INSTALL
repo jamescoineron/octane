@@ -1,0 +1,9 @@
+Building Octane
+
+See doc/readme-qt.rst for instructions on building Octane QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Octane.
+
+See doc/build-*.txt for instructions on building octaned,
+the intended-for-services, no-graphical-interface, reference
+implementation of Octane.

@@ -1,32 +1,14 @@
+OCTANE
+======
 
-Octane development tree
+Octane is a proof-of-stake cryptocurrency with a focus on high performance, longevity and adoption services.
 
-Octane is a PoS-based cryptocurrency.
+Octane was the first cryptocurrency to use the Blake2s hashing algorithm.  Blake2s is a high speed optimized cryptographic hashing algorithm used for proof-of-work and proof-of-stake hashes in Octane for performance with low load.  This makes Octane ideally suited for dedicated staking devices and low-power/low-spec systems.
 
-Development process
-===========================
+Originally dependent on the "libb2" library version of the Blake2s reference distribution, the blake2s reference implementation has now been directly baked in for ease of compilation across platforms.  Users no longer need to download and install libb2 separately.  
 
-Developers work in their own trees, then submit pull requests when
-they think their feature or bug fix is ready.
+If you are technical and you wish to compile libb2 specifically for your platform you may still do so (the configure script will auto-detect and enable special CPU features), you can modify your .pro or daemon makefile.* to remove the blake2 source and object file references, add -lb2 to your LIBS and paths to the includes and library (refer to the old commits).
 
-The patch will be accepted if there is broad consensus that it is a
-good thing.  Developers should expect to rework and resubmit patches
-if they don't match the project's coding conventions (see coding.txt)
-or are controversial.
+Octane will feature a number of innovative solutions devised to foster the growth of the ecosystem.
 
-The master branch is regularly built and tested, but is not guaranteed
-to be completely stable. Tags are regularly created to indicate new
-stable release versions of Octane.
 
-Feature branches are created when there are major new features being
-worked on by several people.
-
-From time to time a pull request will become outdated. If this occurs, and
-the pull is no longer automatically mergeable; a comment on the pull will
-be used to issue a warning of closure. The pull will be closed 15 days
-after the warning if action is not taken by the author. Pull requests closed
-in this manner will have their corresponding issue labeled 'stagnant'.
-
-Issues with no commits will be given a similar warning, and closed after
-15 days from their last activity. Issues closed in this manner will be 
-labeled 'stale'.
